@@ -1,0 +1,29 @@
+{
+	"manifest_version": 3,
+	"name": "Scrolless",
+	"description": "Scroll less, produce more, dopamine more hahaha!",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": "hourglass_empty_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+	},
+	"permissions": [
+		"declarativeNetRequest",
+		"nativeMessaging",
+		"tabs",
+		"storage"
+	],
+	"host_permissions": ["<all_urls>"],
+	"background": {
+		"service_worker": "service-worker.js"
+	},
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "1",
+				"enabled": false,
+				"path": "stoppage_rule.json"
+			}
+		]
+	}
+}

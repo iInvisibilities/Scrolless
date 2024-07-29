@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": { "type": "block" },
+		"condition": {
+			"urlFilter": "*^",
+			"initiatorDomains": [
+				"instagram.com",
+				"cdninstagram.com",
+				"facebook.com",
+				"tiktok.com"
+			],
+			"resourceTypes": ["xmlhttprequest", "object", "media", "image"]
+		}
+	}
+]
